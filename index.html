@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ta Netjer — Rooted in Africa. Made for You.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garant:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════ NAV ═══════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav__marquee">
+      <span>Natural Ingredients &nbsp;·&nbsp; Handmade with Care &nbsp;·&nbsp; Rooted in Africa &nbsp;·&nbsp; Made for You &nbsp;·&nbsp; Ethically Sourced &nbsp;·&nbsp; Naturally African &nbsp;·&nbsp; Natural Ingredients &nbsp;·&nbsp; Handmade with Care &nbsp;·&nbsp; Rooted in Africa &nbsp;·&nbsp; Made for You &nbsp;·&nbsp; Ethically Sourced &nbsp;·&nbsp; Naturally African &nbsp;·&nbsp;</span>
+    </div>
+    <div class="nav__main">
+      <div class="nav__logo-mark">
+        <img src="logo.png" alt="Ta Netjer" class="nav__logo-img" />
+      </div>
+      <ul class="nav__links">
+        <li><a href="#story">Our Story</a></li>
+        <li><a href="#philosophy">Philosophy</a></li>
+        <li><a href="#products">Shop</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav__cart" aria-label="Cart">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        <span class="nav__cart-count" id="cartCount">0</span>
+      </button>
+      <button class="nav__burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="#story">Our Story</a>
+      <a href="#philosophy">Philosophy</a>
+      <a href="#products">Shop</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════ HERO ══════════════════════════════ -->
+  <section class="hero" id="home">
+    <!-- Full bleed background photo -->
+    <div class="hero__photo"></div>
+    <!-- Dark gradient overlay - heavier on left for text legibility -->
+    <div class="hero__overlay"></div>
+
+    <!-- LEFT: Brand content -->
+    <div class="hero__content">
+      <p class="hero__eyebrow">God's Land · Land of Punt · Horn of Africa</p>
+
+      <div class="hero__logo-wrap">
+        <img src="logo.png" alt="Ta Netjer" class="hero__logo" />
+      </div>
+
+      <div class="hero__divider">
+        <span class="hero__line"></span>
+        <span class="hero__ankh">☥</span>
+        <span class="hero__line"></span>
+      </div>
+
+      <p class="hero__tagline">Rooted in Africa. Made for You.</p>
+      <p class="hero__sub">Homemade Personal Care &nbsp;·&nbsp; Ethically Sourced &nbsp;·&nbsp; Naturally African</p>
+      <p class="hero__source">Sourced from the Horn of Africa and the Wider African Continent</p>
+
+      <div class="hero__ctas">
+        <a href="#products" class="btn btn--gold">Discover Our Collection</a>
+        <a href="#story" class="btn btn--ghost">Our Story</a>
+      </div>
+    </div>
+
+    <div class="hero__scroll" id="scrollCue">
+      <span>Scroll</span>
+      <svg width="16" height="24" viewBox="0 0 16 24"><rect x="1" y="1" width="14" height="22" rx="7" stroke="currentColor" stroke-width="1.5" fill="none"/><circle class="hero__scroll-dot" cx="8" cy="7" r="2.5" fill="currentColor"/></svg>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════ VALUES STRIP ══════════════════════════ -->
+  <section class="values">
+    <div class="values__grid">
+      <div class="values__item">
+        <div class="values__icon">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M24 4C24 4 8 16 8 28a16 16 0 0032 0C40 16 24 4 24 4z" stroke="currentColor" stroke-width="1.5"/><path d="M24 20v16M18 30l6-6 6 6" stroke="currentColor" stroke-width="1.5"/></svg>
+        </div>
+        <h3>Natural Ingredients</h3>
+        <p>Pure botanicals sourced directly from African lands, unaltered by industrial chemistry.</p>
+      </div>
+      <div class="values__item">
+        <div class="values__icon">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M12 36c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="currentColor" stroke-width="1.5"/><circle cx="24" cy="18" r="7" stroke="currentColor" stroke-width="1.5"/></svg>
+        </div>
+        <h3>Nourishing Formulas</h3>
+        <p>Centuries of wisdom distilled into every product — crafted with intention, not shortcuts.</p>
+      </div>
+      <div class="values__item">
+        <div class="values__icon">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M24 8c-5 0-10 4-10 10 0 8 10 22 10 22s10-14 10-22c0-6-5-10-10-10z" stroke="currentColor" stroke-width="1.5"/><path d="M24 18v0" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Made by Hand with Love</h3>
+        <p>Each piece is handcrafted — a living thread connecting ancient practice to modern care.</p>
+      </div>
+      <div class="values__item">
+        <div class="values__icon">
+          <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="1.5"/><path d="M24 8C15.163 8 8 15.163 8 24s7.163 16 16 16" stroke="currentColor" stroke-width="1.5"/><path d="M16 24c0-4 3.6-8 8-8" stroke="currentColor" stroke-width="1.5"/></svg>
+        </div>
+        <h3>Supporting African Communities</h3>
+        <p>Fair trade at heart — every purchase sustains the communities whose hands bring it to life.</p>
+      </div>
+      <div class="values__item">
+        <div class="values__icon">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M24 8l-3 8H12l7 5-3 9 8-6 8 6-3-9 7-5H27z" stroke="currentColor" stroke-width="1.5"/></svg>
+        </div>
+        <h3>Sustainable Practices</h3>
+        <p>Reduce. Reuse. Recycle. We take only what the Earth can replenish.</p>
+      </div>
+      <div class="values__cta-tile">
+        <p>Care That Honours<br/><strong>Nature and Heritage</strong></p>
+        <a href="#products" class="btn btn--gold">Discover Our Collection &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════ STORY ══════════════════════════════ -->
+  <section class="story" id="story">
+    <div class="story__inner">
+      <div class="story__text">
+        <span class="section-eyebrow">Our Heritage</span>
+        <h2 class="story__heading">What is<br /><em>Ta&nbsp;Netjer?</em></h2>
+        <div class="story__ornament">☥</div>
+        <p>For the ancient Egyptians, <strong>Ta-Netjer</strong> meant "God's Land" — a name also given to the Land of Punt, believed to stretch from present-day Eritrea to Somalia. A journey to this region was akin to a pilgrimage: as extraordinary, in their time, as a trip to the moon might seem today.</p>
+        <p>They believed this land to be not only the cradle of humanity but also a place of renewal — an opportunity to revitalize through the abundance of nature's riches. Each expedition returned with boats laden with raw materials and local goods essential to life in Pharaoh's Egypt. These voyages were not merely economic missions; they were adventures, filled with stories, discoveries, and achievements worth passing down through generations.</p>
+        <p>When Queen Hatshepsut sent her expeditions to Punt, the aim was not conquest. Their exchanges were grounded in mutual benefit and respect — the spirit of fair trade written into the ancient world.</p>
+        <a href="#philosophy" class="btn btn--outline-gold">Read the Full Philosophy</a>
+      </div>
+      <div class="story__visual">
+        <div class="story__map-frame">
+          <div class="story__map-ornament top-left"></div>
+          <div class="story__map-ornament top-right"></div>
+          <div class="story__map-ornament bottom-left"></div>
+          <div class="story__map-ornament bottom-right"></div>
+          <div class="story__map-content">
+            <svg viewBox="0 0 300 360" class="story__africa-svg" xmlns="http://www.w3.org/2000/svg">
+              <path d="M120 20 L160 18 L195 30 L215 55 L218 85 L210 110 L225 130 L235 160 L230 195 L215 220 L200 245 L185 270 L165 295 L150 315 L135 295 L115 270 L95 245 L78 215 L65 185 L60 155 L65 120 L55 95 L65 68 L85 45 Z" fill="none" stroke="#C8A96E" stroke-width="2" opacity="0.6"/>
+              <path d="M215 110 L235 100 L255 115 L245 140 L225 130 Z" fill="#D4602A" opacity="0.4"/>
+              <path d="M215 110 L235 100 L255 115 L245 140 L225 130 Z" fill="none" stroke="#D4602A" stroke-width="1.5"/>
+              <circle cx="238" cy="120" r="4" fill="#C8A96E"/>
+              <text x="245" y="110" font-family="Cinzel, serif" font-size="9" fill="#C8A96E" opacity="0.9">Land of</text>
+              <text x="245" y="122" font-family="Cinzel, serif" font-size="9" fill="#C8A96E" opacity="0.9">Punt</text>
+              <path d="M150 180 Q200 140 238 120" fill="none" stroke="#C8A96E" stroke-width="1" stroke-dasharray="4 4" opacity="0.5"/>
+              <circle cx="148" cy="60" r="3" fill="#C8A96E" opacity="0.7"/>
+              <text x="110" y="58" font-family="Cinzel, serif" font-size="8" fill="#C8A96E" opacity="0.7">Egypt</text>
+              <circle cx="150" cy="185" r="15" fill="#D4602A" opacity="0.15"/>
+              <circle cx="150" cy="185" r="8" fill="#D4602A" opacity="0.3"/>
+              <text x="150" y="200" font-family="serif" font-size="18" fill="#C8A96E" opacity="0.5" text-anchor="middle">☥</text>
+              <text x="126" y="215" font-family="Cinzel, serif" font-size="8" fill="#C8A96E" opacity="0.6" text-anchor="middle">Heart of Africa</text>
+            </svg>
+            <p class="story__map-caption">The ancient Land of Punt — cradle of nature's abundance</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════ PHILOSOPHY ═══════════════════════════ -->
+  <section class="philosophy" id="philosophy">
+    <div class="philosophy__bg-text" aria-hidden="true">TA-NETJER</div>
+    <div class="philosophy__inner">
+      <div class="philosophy__header">
+        <span class="section-eyebrow section-eyebrow--light">The Spirit</span>
+        <h2 class="philosophy__heading">Care That Honours<br /><em>Nature and Heritage</em></h2>
+        <div class="philosophy__rule">
+          <span></span><span class="philosophy__ankh">☥</span><span></span>
+        </div>
+      </div>
+      <div class="philosophy__pillars">
+        <div class="philosophy__pillar reveal">
+          <span class="philosophy__num">I</span>
+          <h3>God's Land</h3>
+          <p>Mother Earth is not the "Man's World" sung by James Brown. It exists beyond cold steel and industrialization, rooted in a deeply spiritual realm. The Earth belongs to the collective spirit of all living beings — not just humans, and certainly not any single nation.</p>
+        </div>
+        <div class="philosophy__pillar reveal">
+          <span class="philosophy__num">II</span>
+          <h3>Shared Responsibility</h3>
+          <p>To call it "God's Land" is to recognize the planet as a shared responsibility. There are no true boundaries that justify exploitation or destruction. Territoriality implies exclusivity — and in doing so, it undermines inclusiveness.</p>
+        </div>
+        <div class="philosophy__pillar reveal">
+          <span class="philosophy__num">III</span>
+          <h3>Fair Exchange</h3>
+          <p>The philosophy of Ta-Netjer embraces fair trade. When ancient expeditions journeyed to Punt, their aim was not conquest, nor exclusive dominance. Their exchanges were based on mutual benefit and respect — a model we carry forward today.</p>
+        </div>
+        <div class="philosophy__pillar reveal">
+          <span class="philosophy__num">IV</span>
+          <h3>A Living Mission</h3>
+          <p>Each visit to this site is intended to be both educational and meaningful — offering insights into natural living alongside locally handcrafted skincare products. We believe in using only what we need, and caring for future generations above all else.</p>
+        </div>
+      </div>
+      <blockquote class="philosophy__quote">
+        <p>"Reviving the name Ta-Netjer is an effort to reconnect with a time when life was more harmonious, balanced, and aligned with nature."</p>
+        <cite>— The Ta-Netjer Spirit</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════ PRODUCTS ═════════════════════════════ -->
+  <section class="products" id="products">
+    <div class="products__inner">
+      <div class="products__header">
+        <span class="section-eyebrow">The Collection</span>
+        <h2 class="products__heading">Handcrafted for<br /><em>Your Wellbeing</em></h2>
+        <p class="products__intro">Each product is made by hand from ethically sourced African ingredients — bringing the abundance of ancient lands into your daily ritual.</p>
+      </div>
+      <div class="products__grid" id="productsGrid"></div>
+      <div class="products__coming">
+        <p>More products coming soon — <a href="#contact">join our list</a> to be the first to know.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═════════════════════════════ CART MODAL ══════════════════════════ -->
+  <div class="cart-overlay" id="cartOverlay" aria-hidden="true">
+    <div class="cart-modal" role="dialog" aria-label="Shopping Cart">
+
+      <!-- STEP 1: CART VIEW -->
+      <div class="cart-step" id="stepCart">
+        <div class="cart-modal__header">
+          <h3>Your Cart</h3>
+          <button class="cart-modal__close" id="cartClose" aria-label="Close cart">✕</button>
+        </div>
+        <div class="cart-modal__items" id="cartItems">
+          <p class="cart-modal__empty">Your cart is empty.</p>
+        </div>
+        <div class="cart-modal__footer" id="cartFooter" style="display:none">
+          <div class="cart-modal__total">
+            <span>Total</span>
+            <span id="cartTotal">£0.00</span>
+          </div>
+          <button class="btn btn--gold btn--full" id="goToCheckout">Proceed to Checkout</button>
+          <p class="cart-modal__note">Pay by E-Transfer &nbsp;·&nbsp; Card payments coming soon</p>
+        </div>
+      </div>
+
+      <!-- STEP 2: CHECKOUT FORM -->
+      <div class="cart-step" id="stepCheckout" style="display:none">
+        <div class="cart-modal__header">
+          <button class="cart-modal__back" id="backToCart" aria-label="Back to cart">←</button>
+          <h3>Checkout Details</h3>
+          <button class="cart-modal__close" id="checkoutClose" aria-label="Close cart">✕</button>
+        </div>
+        <div class="cart-modal__items">
+          <div class="checkout-summary" id="checkoutSummary"></div>
+
+          <form class="checkout-form" id="checkoutForm">
+            <label class="checkout-form__label">Full Name
+              <input type="text" name="fullName" required class="checkout-form__input" placeholder="Jane Doe" />
+            </label>
+            <label class="checkout-form__label">Email Address
+              <input type="email" name="email" required class="checkout-form__input" placeholder="you@email.com" />
+            </label>
+            <label class="checkout-form__label">Shipping Address
+              <textarea name="address" required class="checkout-form__input checkout-form__textarea" placeholder="Street address, city, province, postal code"></textarea>
+            </label>
+            <label class="checkout-form__label">Order Notes <span class="checkout-form__optional">(optional)</span>
+              <textarea name="notes" class="checkout-form__input checkout-form__textarea checkout-form__textarea--small" placeholder="Anything we should know?"></textarea>
+            </label>
+            <button type="submit" class="btn btn--gold btn--full">Continue to Payment</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- STEP 3: E-TRANSFER CONFIRMATION -->
+      <div class="cart-step" id="stepConfirm" style="display:none">
+        <div class="cart-modal__header">
+          <h3>Complete Your Payment</h3>
+          <button class="cart-modal__close" id="confirmClose" aria-label="Close cart">✕</button>
+        </div>
+        <div class="cart-modal__items">
+          <div class="etransfer-card">
+            <div class="etransfer-card__icon">
+              <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1.5"/><path d="M16 24l5 5 11-11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h4>Order <span id="orderNumber">#TN-0000</span> Received</h4>
+            <p class="etransfer-card__sub">Please complete your payment via Interac e-Transfer to finalize your order.</p>
+
+            <div class="etransfer-detail">
+              <span class="etransfer-detail__label">Send Payment To</span>
+              <div class="etransfer-detail__value-row">
+                <span class="etransfer-detail__value" id="payeeEmail">tanetjer.nature@gmail.com</span>
+                <button class="etransfer-copy" id="copyEmail" type="button">Copy</button>
+              </div>
+            </div>
+
+            <div class="etransfer-detail">
+              <span class="etransfer-detail__label">Amount</span>
+              <div class="etransfer-detail__value-row">
+                <span class="etransfer-detail__value etransfer-detail__value--amount" id="payAmount">£0.00</span>
+                <button class="etransfer-copy" id="copyAmount" type="button">Copy</button>
+              </div>
+            </div>
+
+            <div class="etransfer-detail">
+              <span class="etransfer-detail__label">Reference / Message</span>
+              <div class="etransfer-detail__value-row">
+                <span class="etransfer-detail__value" id="payReference">Order #TN-0000</span>
+                <button class="etransfer-copy" id="copyReference" type="button">Copy</button>
+              </div>
+            </div>
+
+            <div class="etransfer-steps">
+              <p class="etransfer-steps__title">How to complete your e-Transfer</p>
+              <ol>
+                <li>Log into your online banking and select Interac e-Transfer / Send Money.</li>
+                <li>Enter the recipient email above and the exact amount shown.</li>
+                <li>Paste the order reference into the message field so we can match your payment.</li>
+                <li>We'll confirm receipt and ship your order within 1–2 business days.</li>
+              </ol>
+            </div>
+
+            <p class="etransfer-card__note">A confirmation of your order details has been recorded. If your bank requires a security question, set the answer to <strong>tanetjer</strong> or contact us at <a href="mailto:tanetjer.nature@gmail.com">tanetjer.nature@gmail.com</a>.</p>
+
+            <button class="btn btn--gold btn--full" id="finishOrder">Done</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ════════════════════════════ RITUAL STRIP ═════════════════════════ -->
+  <section class="ritual">
+    <div class="ritual__inner">
+      <div class="ritual__text">
+        <span class="section-eyebrow">The Three R's</span>
+        <h2>Reduce. <em>Reuse.</em> Recycle.</h2>
+        <p>We believe in using only what we need to live sustainably and comfortably. Our packaging, our sourcing, and our formulas are all shaped by this commitment — to the planet, to the communities that sustain us, and to the generations who will inherit both.</p>
+      </div>
+      <div class="ritual__stats">
+        <div class="ritual__stat">
+          <span class="ritual__num">100%</span>
+          <span class="ritual__label">Natural Formulas</span>
+        </div>
+        <div class="ritual__stat">
+          <span class="ritual__num">0</span>
+          <span class="ritual__label">Harmful Chemicals</span>
+        </div>
+        <div class="ritual__stat">
+          <span class="ritual__num">∞</span>
+          <span class="ritual__label">Generations to Protect</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════ CONTACT ════════════════════════════ -->
+  <section class="contact" id="contact">
+    <div class="contact__inner">
+      <span class="section-eyebrow section-eyebrow--light">Stay Connected</span>
+      <h2>Join the<br /><em>Ta-Netjer Community</em></h2>
+      <p>Be the first to know about new products, restocks, and stories from the continent.</p>
+      <div class="contact__form">
+        <input type="email" placeholder="Your email address" class="contact__input" id="emailInput" />
+        <button class="btn btn--gold" id="emailSubmit">Subscribe</button>
+      </div>
+      <p class="contact__legal">We respect your privacy. No spam, ever.</p>
+      <div class="contact__socials">
+        <a href="#" aria-label="Instagram" class="contact__social">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="#" aria-label="Facebook" class="contact__social">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a href="#" aria-label="Email" class="contact__social">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════ FOOTER ═════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <img src="logo.png" alt="Ta Netjer" class="footer__logo" />
+        <p>Rooted in Africa. Made for You.</p>
+        <p class="footer__sub">Homemade Personal Care · Ethically Sourced · Naturally African</p>
+      </div>
+      <div class="footer__links">
+        <div>
+          <h4>Navigate</h4>
+          <a href="#story">Our Story</a>
+          <a href="#philosophy">Philosophy</a>
+          <a href="#products">Shop</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div>
+          <h4>Information</h4>
+          <a href="#">Shipping & Returns</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Sustainability</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>☥ &nbsp;© <span id="year"></span> Ta-Netjer. All rights reserved. &nbsp;·&nbsp; Sourced from the Horn of Africa and the wider African Continent.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
