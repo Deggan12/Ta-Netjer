@@ -270,7 +270,7 @@
     font-family: var(--font-heading); font-size: 0.65rem;
     letter-spacing: 0.14em; text-transform: uppercase; color: var(--sand); margin-bottom: 0.6rem;
   }
-  .values__item p { font-size: 0.82rem; line-height: 1.6; color: rgba(242,234,216,0.5); }
+  
   
   /* Gold CTA tile — matches the original layout */
   .values__cta-tile {

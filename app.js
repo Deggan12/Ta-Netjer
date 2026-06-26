@@ -1,19 +1,18 @@
 /* ═══════════════════════════════════════════════════
-   TA-NETJER — app.js
+   TA-NETJER - app.js
    ═══════════════════════════════════════════════════ */
 
 /* ── PRODUCT DATA ──
-   NOTE: Prices below are PLACEHOLDERS — replace the `price` value
-   for each product with your real price. Everything else (cart math,
-   totals, etc.) updates automatically once you do.
+   NOTE: Prices below are PLACEHOLDERS - replace the `price` value
+   for each product with your real price. Everything else updates automatically.
 */
 const PRODUCTS = [
     {
       id: 1,
       name: 'Blue Lotus Artisan Shaving & Body Soap',
       tag: 'Skin Care',
-      desc: 'A handcrafted round soap bar inspired by ancient Egypt\'s sacred Blue Lotus. Rich, cushioning lather from coconut, palm, canola, and castor oils — perfect for shaving or body wash. Naturally colored, phthalate-free fragrance, 5% superfat for soft, hydrated skin.',
-      price: 9.00, // PLACEHOLDER — update with real price
+      desc: 'A handcrafted round soap bar inspired by ancient Egypt\'s sacred Blue Lotus. Rich, cushioning lather from coconut, palm, canola, and castor oils - perfect for shaving or body wash. Phthalate-free fragrance, 5% superfat for soft, hydrated skin.',
+      price: 9.00, // PLACEHOLDER
       image: 'images/BlueSoap.png',
       badge: 'New',
     },
@@ -21,8 +20,8 @@ const PRODUCTS = [
       id: 2,
       name: 'Oatmeal Soap',
       tag: 'Skin Care',
-      desc: 'Hypoallergenic and scent-free, made with natural ingredients for gentle, everyday cleansing. Soothing for sensitive skin.',
-      price: 8.50, // PLACEHOLDER — update with real price
+      desc: 'Hypoallergenic and scent-free. Handmade with natural ingredients for gentle, everyday cleansing. Soothing and pure - ideal for sensitive skin.',
+      price: 8.50, // PLACEHOLDER
       image: 'images/OatmealSoap.png',
       badge: 'Bestseller',
     },
@@ -30,35 +29,62 @@ const PRODUCTS = [
       id: 3,
       name: 'Charcoal & Black Seed Soap',
       tag: 'Skin Care',
-      desc: 'Detoxifying and purifying, handmade with natural ingredients to draw out impurities and brighten the skin.',
-      price: 9.50, // PLACEHOLDER — update with real price
+      desc: 'Detoxifying and purifying. Deep-cleansing activated charcoal meets the healing power of black seed. Handmade with natural ingredients to draw out impurities and brighten the skin.',
+      price: 9.50, // PLACEHOLDER
       image: 'images/BlackseedSoap.png',
       badge: null,
     },
     {
       id: 4,
-      name: 'Turmeric Face Mask — Purify & Glow',
+      name: 'Moringa Soap',
       tag: 'Skin Care',
-      desc: '100% natural detoxifying blend sourced from the Horn of Africa. Purifies and brightens for a healthy glow. 150g.',
-      price: 18.00, // PLACEHOLDER — update with real price
-      image: 'images/TurmericMask.png',
+      desc: 'Naturally nourishing. Deeply healing. Handmade with Moringa Leaf Powder and a healing blend of rosemary, cedarwood, and sweet orange essential oils for healthy, radiant skin. Pure & gentle for all skin types.',
+      price: 9.50, // PLACEHOLDER
+      image: 'images/MoringaSoap.png',
       badge: null,
     },
     {
       id: 5,
-      name: 'Hair Growth Solution with Vitamin E',
-      tag: 'Hair Care',
-      desc: 'Nourishes and strengthens, promotes healthy growth. Suitable for all hair types. Rooted in Africa.',
-      price: 24.00, // PLACEHOLDER — update with real price
-      image: 'images/Hairoil.png',
+      name: 'Turmeric Face Mask - Purify & Glow',
+      tag: 'Skin Care',
+      desc: '100% natural. Purifies & brightens, nourishes your skin. Sourced from the Horn of Africa. 150g.',
+      price: 18.00, // PLACEHOLDER
+      image: 'images/TurmericMask.png',
       badge: null,
     },
     {
       id: 6,
-      name: 'Deodorant Cream — Lavender + Vanilla',
+      name: 'Qasil Face Pack',
+      tag: 'Skin Care',
+      desc: 'Natural deep cleansing. Made from the leaves of the Gob Tree grown in Somalia. Deep cleansing & purifying, revitalizes and nourishes skin. 100% natural. 150g.',
+      price: 18.00, // PLACEHOLDER
+      image: 'images/QasilPack.png',
+      badge: null,
+    },
+    {
+      id: 7,
+      name: 'Henna & Botanical Shampoo Bar',
+      tag: 'Hair Care',
+      desc: 'Natural care for healthy, strong, beautiful hair. Handmade with premium henna powder and botanical oils to gently cleanse, condition, and revitalize your hair. Phthalate-free fragrance. Gentle & safe for all hair types.',
+      price: 12.00, // PLACEHOLDER
+      image: 'images/ShampooBar.png',
+      badge: null,
+    },
+    {
+      id: 8,
+      name: 'Hair Growth Solution with Vitamin E',
+      tag: 'Hair Care',
+      desc: 'Nourishes and strengthens, promotes healthy growth. Formulated with Vitamin E. Suitable for all hair types. Rooted in Africa.',
+      price: 24.00, // PLACEHOLDER
+      image: 'images/Hairoil.png',
+      badge: null,
+    },
+    {
+      id: 9,
+      name: 'Deodorant Cream - Lavender + Vanilla',
       tag: 'Body Care',
       desc: 'Vegan and organic, aluminium-free deodorant cream. Gentle on skin, kind to the planet. 2oz / 60ml.',
-      price: 12.00, // PLACEHOLDER — update with real price
+      price: 12.00, // PLACEHOLDER
       image: 'images/Deodorant.png',
       badge: null,
     },
