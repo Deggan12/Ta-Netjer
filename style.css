@@ -189,13 +189,7 @@
     animation: heroReveal 1.4s 0.2s ease both;
     max-width: 460px;
   }
-  .hero__logo {
-    width: 100%;
-    height: auto;
-    mix-blend-mode: screen;
-    filter: brightness(1.1);
-    /* screen blend on the dark hero bg = the black parts vanish, logo art shows */
-  }
+  /* hero logo styles handled below */
   
   .hero__divider {
     display: flex; align-items: center; gap: 1rem;
@@ -672,8 +666,15 @@
     .nav__logo-img { height: 42px; }
     .hero__content { padding: 8rem 1.75rem 5rem; max-width: 100%; }
     .hero__ctas { flex-direction: column; }
-    .values__grid { grid-template-columns: 1fr 1fr; }
-    .values__cta-tile { grid-column: span 2; flex-direction: column; }
+    .values__grid { grid-template-columns: 1fr; }
+    .values__item { display: none; }
+    .values__cta-tile { grid-column: span 1; flex-direction: row; justify-content: space-between; align-items: center; }
+    /* Swap hero background to portrait version on phones/tablets */
+    .hero__photo {
+      background-image: url('mobile-bg.png');
+      background-position: center top;
+      transform: none;
+    }
     .philosophy__pillars { grid-template-columns: 1fr; }
     .philosophy__pillar { border-right: none !important; border-bottom: 1px solid rgba(200,169,110,0.1) !important; }
     .philosophy__pillar:last-child { border-bottom: none !important; }
@@ -685,10 +686,88 @@
   }
   @media (max-width: 480px) {
     .values__grid { grid-template-columns: 1fr; }
+    /* Hide the 5 icon pillars on mobile — keep only the gold CTA tile */
+    .values__item { display: none; }
     .values__cta-tile { grid-column: span 1; }
     .ritual__stats { grid-template-columns: 1fr; }
     .hero__logo-wrap { max-width: 300px; }
+    /* Swap to portrait mobile background */
+    .hero__photo {
+      background-image: url('mobile-bg.png');
+      background-position: center top;
+      transform: none;
+    }
+    .hero__content { padding: 7rem 1.5rem 4rem; }
+    /* Stronger overlay on mobile since products fill more of the frame */
+    .hero__overlay {
+      background:
+        linear-gradient(
+          to bottom,
+          rgba(10, 8, 5, 0.65) 0%,
+          rgba(10, 8, 5, 0.45) 40%,
+          rgba(10, 8, 5, 0.7) 100%
+        );
+    }
   }
   @media (prefers-reduced-motion: reduce) {
     * { animation-duration:0.01ms !important;transition-duration:0.01ms !important; }
+  }
+  
+  /* ══════════════════════════════════════════════════
+     WHATSAPP
+  ══════════════════════════════════════════════════ */
+  /* Floating WhatsApp button */
+  .wa-float {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: #1a9c4e;
+    color: #fff;
+    padding: 0.75rem 1.25rem;
+    border-radius: 50px;
+    box-shadow: 0 4px 20px rgba(26,156,78,0.4);
+    font-family: var(--font-heading);
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: transform var(--ease), box-shadow var(--ease);
+  }
+  .wa-float:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 28px rgba(26,156,78,0.5);
+  }
+  .wa-float svg { width: 20px; height: 20px; flex-shrink: 0; }
+  
+  /* Product card WhatsApp order button */
+  .product-card__wa {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    background: #1a9c4e !important;
+    color: #fff !important;
+    border-color: #1a9c4e !important;
+  }
+  .product-card__wa:hover {
+    background: #157a3c !important;
+    color: #fff !important;
+  }
+  .product-card__wa svg { flex-shrink: 0; }
+  
+  /* Hero beige logo - no blend mode needed if image has transparent/beige bg */
+  .hero__logo {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 0 30px rgba(200,169,110,0.25));
+  }
+  
+  /* Mobile: hide WhatsApp text label, show icon only */
+  @media (max-width: 480px) {
+    .wa-float span { display: none; }
+    .wa-float { padding: 0.85rem; border-radius: 50%; bottom: 1.5rem; right: 1.5rem; }
+    .wa-float svg { width: 24px; height: 24px; }
   }
